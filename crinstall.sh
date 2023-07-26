@@ -57,6 +57,7 @@ then
          sudo cp -R /share/licenses/crystal /usr/share/licences/
 
          echo "[FINISHED]: copying process finished. Trying to run crystal."
+         whereis crystal
          crystal
          exit 0
    fi
