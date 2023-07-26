@@ -10,15 +10,16 @@ chmod +x crinstaller.sh
 ```
 
 # Running the script
+Run the script with the filename (if its located in the same directory as the script) or run it with the filename and the path to the file. 
 ```
-sh crinstaller.sh filename
+./crinstaller.sh 'filename'
 ```
 or 
 ```
-sh crinstaller.sh /directory/filename
+./crinstaller.sh '/directory/filename'
 ```
 And, if everything goes to plan, Crystal will be installed in no time!
 
 # Reasons to make this script
-Slackware GNU/Linux does package managing way too diferent from other distros, starting from the fact that there is no main repository to install or update. Meaning that you can mainly install in two ways: compile the source code o install a build through .tgz or txz files.
+Slackware GNU/Linux does package managing way too diferent from other distros, starting from the fact that there is no main repository to install or update. Meaning that you can mainly install in two ways: compile the source code or installing through .tgz or .txz files.
 Since there's not an up to date SlackBuild for Crystal. It's best to download the tar.gz file and install it manually which takes time, giving this script its purpose.
