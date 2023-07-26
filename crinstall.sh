@@ -2,15 +2,15 @@
 
 if [ "$#" -eq 1 ]
 then
-   cfile="$1"
-   if [ -f "$file" ]
+   cfile=$1
+   if [ -f "$cfile" ]
    then
          echo "[MKDIR]: creating directory for extraction."
          mkdir extracted
 
          echo "[EXTRACTING]: $cfile contents to extracted/"
-         tar xvf "$file" -C extracted
-         cd extracted && cd crystal* && ls
+         tar xvf "$cfile" -C extracted
+         cd extracted && cd crystal*/ && ls
          
          echo "[COPYING]: /bin/crystal and /bin/shards binaries to usr/bin"
          sudo cp -R /bin/crystal /usr/bin
@@ -57,11 +57,23 @@ then
          sudo cp -R /share/licenses/crystal /usr/share/licences/
 
          echo "[FINISHED]: copying process finished. Trying to run crystal."
-         whereis crystal
          crystal
-         exit 0
+
+         if [ "$?" -eq 0 ]
+         then
+            exit 0
+         else
+            echo "Crystal could not install properly. Try again!"
+            exit 1
+         fi
+   else
+      echo "$cfile is not a file!"
+      exit 1
    fi
 else
    echo "Usage: $0 '.tar.gz file'"
    exit 1
 fi
+
+# Deletes the directory created for extraction as it is no longer needed
+rm -rf extracted/
