@@ -4,7 +4,10 @@ A simple script that performs a "manual" install from the tar.gz files of the Cr
 # Preparations
 1. Download the tar.gz file from the oficial Crystal Programming Language Repository: https://github.com/crystal-lang/crystal/releases
 2. Download the installer. Preferably, place it in the same directory as the tar.gz file to install.
-3. Give the installer permission to be executed, by running: chmod +x crinstaller.sh
+3. Give the installer permission to be executed, by running:
+```
+chmod +x crinstaller.sh
+```
 
 # Running the script
 ```
