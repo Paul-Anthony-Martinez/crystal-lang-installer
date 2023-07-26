@@ -27,5 +27,10 @@ Since there's not an up to date SlackBuild for Crystal, it's better to download 
 Or you could just do as explained in: https://crystal-lang.org/install/from_targz/
 
 To make it simpler to use, you can create a symbolic link available in the path:
-
+```
 ln -s /full/path/to/bin/crystal /usr/local/bin/crystal
+```
+Then you can invoke the compiler by just typing:
+```
+crystal --version
+```
