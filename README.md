@@ -21,5 +21,5 @@ or
 And, if everything goes to plan, Crystal will be installed in no time!
 
 # Reasons to make this script
-Slackware GNU/Linux does package managing way too diferent from other distros, starting from the fact that there is no main repository to install or update. Meaning that you can mainly install in two ways: compile the source code or installing through .tgz or .txz files.
+Slackware GNU/Linux does package management way too diferent from other distros, starting from the fact that there is no main repository to install or update. Meaning that you can mainly install in two ways: compile the source code or installing through .tgz or .txz files.
 Since there's not an up to date SlackBuild for Crystal. It's best to download the tar.gz file and install it manually which takes time, giving this script its purpose.
