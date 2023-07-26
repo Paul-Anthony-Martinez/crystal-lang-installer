@@ -2,7 +2,7 @@
 
 if [ "$#" -eq 1 ]
 then
-   cfile=$1
+   cfile="$1"
    if [ -f "$cfile" ]
    then
          echo "[MKDIR]: creating directory for extraction."
